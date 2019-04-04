@@ -32,8 +32,24 @@
       <section class="anketa">
         <p class="anketa_descriptio">Заполните анкету и мы подберем
             программу питания для вашего кота</p>
-        <form action="post" class="anceta-form">
-          
+        <form action="post" class="anketa-form ">
+            <fieldset class="anketa-site__form-about form-about">
+              <legend class="anketa-about__title visually-hidden">О коте</legend>
+              <ul class="anketa-about__list">
+                <li class="anketa-about__item">
+                  <label class="anketa-about__label for="name-cat">Имя:*</label>
+                  <input class="anketa-about__text type="text" name="name-cat" id="name-cat" placeholder="Барсик">
+                </li>
+                <li class="anketa-about__item">
+                  <label class="anketa-about__label for="weight-cat">Вес (кг):*</label>
+                  <input class="anketa-about__text type="text" name="weight-cat" id="weight-cat" placeholder="7">
+                </li>
+                <li class="anketa-about__item">
+                  <label class="anketa-about__label for="age-cat">Возраст (лет):</label>
+                  <input class="anketa-about__text type="text" name="age-cat" id="age-cat" placeholder="7">
+                </li>
+              </ul>
+            </fieldset>
         </form>
       </section>
       <!-- /.anketa -->
