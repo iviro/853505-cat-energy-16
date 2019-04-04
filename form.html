@@ -33,23 +33,53 @@
         <p class="anketa_descriptio">Заполните анкету и мы подберем
             программу питания для вашего кота</p>
         <form action="post" class="anketa-form ">
-            <fieldset class="anketa-site__form-about form-about">
-              <legend class="anketa-about__title visually-hidden">О коте</legend>
-              <ul class="anketa-about__list">
-                <li class="anketa-about__item">
-                  <label class="anketa-about__label for="name-cat">Имя:*</label>
-                  <input class="anketa-about__text type="text" name="name-cat" id="name-cat" placeholder="Барсик">
-                </li>
-                <li class="anketa-about__item">
-                  <label class="anketa-about__label for="weight-cat">Вес (кг):*</label>
-                  <input class="anketa-about__text type="text" name="weight-cat" id="weight-cat" placeholder="7">
-                </li>
-                <li class="anketa-about__item">
-                  <label class="anketa-about__label for="age-cat">Возраст (лет):</label>
-                  <input class="anketa-about__text type="text" name="age-cat" id="age-cat" placeholder="7">
-                </li>
-              </ul>
-            </fieldset>
+          <fieldset class="anketa-site__about anketa-about">
+            <legend class="anketa-about__title visually-hidden">О коте</legend>
+            <ul class="anketa-about__list">
+              <li class="anketa-about__item">
+                <label class="anketa-about__label for="name-cat">Имя:*</label>
+                <input class="anketa-about__text type="text" name="name-cat" id="name-cat" placeholder="Барсик" autofocus>
+              </li>
+              <li class="anketa-about__item">
+                <label class="anketa-about__label for="weight-cat">Вес (кг):*</label>
+                <input class="anketa-about__text type="text" name="weight-cat" id="weight-cat" placeholder="7">
+              </li>
+              <li class="anketa-about__item">
+                <label class="anketa-about__label for="age-cat">Возраст (лет):</label>
+                <input class="anketa-about__text type="text" name="age-cat" id="age-cat" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="anketa-site__program anketa-program">
+            <legend class="anketa-program__title visually-hidden">Выбор программы питания</legend>
+            <ul class="anketa-program__list">
+              <li class="anketa-program__item">
+                <input class="anketa-program__item anketa-program__item--selected"  id="anketa-item1" type="radio" name="anketa-slim" checked>
+                <label class="anketa-program__label for="anketa-item1">Похудение</label>
+              </li>
+              <li class="anketa-program__item">
+                <input class="anketa-program__item" id="anketa-item2" type="radio" name="anketa-pro">
+                <label class="anketa-program__label for="anketa-item2">Набор массы</label>
+              </li>
+              <li class="anketa-program__item">
+                <input class="anketa-program__item" id="anketa-item3" type="radio" name="anketa-nonknow">
+                <label class="anketa-program__label for="anketa-item3">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="anketa-site__contacts anketa-contacts">
+            <legend class="anketa-contacts__title">Контактные данные (владельца кота)</legend>
+            <ul class="anketa-contacts__list">
+              <li class="anketa-contacts__item">
+                <label class="anketa-contacts__email-label" for="anketa-email">E-mail:*</label>
+                <input class="anketa-contacts__email-input" type="text" name="anketa-email" id="anketa-email" placeholder="kuklachev@gmail.com"">
+              </li>
+              <li class="anketa-contacts__item">
+                <label class="anketa-contacts__phone-label" for="anketa-phone">Телефон:*</label>
+                <input class="anketa-contacts__phone-input" type="text" name="anketa-phone" id="anketa-phone" placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
         </form>
       </section>
       <!-- /.anketa -->
