@@ -33,7 +33,7 @@
         <p class="anketa_descriptio">Заполните анкету и мы подберем
             программу питания для вашего кота</p>
         <form action="post" class="anketa-form ">
-          <fieldset class="anketa-site__about anketa-about">
+          <fieldset class="anketa-form__about anketa-about">
             <legend class="anketa-about__title visually-hidden">О коте</legend>
             <ul class="anketa-about__list">
               <li class="anketa-about__item">
@@ -50,24 +50,24 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="anketa-site__program anketa-program">
+          <fieldset class="anketa-form__program anketa-program">
             <legend class="anketa-program__title visually-hidden">Выбор программы питания</legend>
             <ul class="anketa-program__list">
               <li class="anketa-program__item">
-                <label" class="anketa-program__label" for="anketa-item1">Похудение</label>
                 <input class="anketa-program__item anketa-program__item--selected"  id="anketa-item1" type="radio" name="anketa-slim" checked>
+                <label" class="anketa-program__label" for="anketa-item1">Похудение</label>
               </li>
               <li class="anketa-program__item">
-                <label" class="anketa-program__label" for="anketa-item2">Набор массы</label>
                 <input class="anketa-program__item" id="anketa-item2" type="radio" name="anketa-pro">
+                <label" class="anketa-program__label" for="anketa-item2">Набор массы</label>
               </li>
               <li class="anketa-program__item">
-                <label" class="anketa-program__label" for="anketa-item3">Не знаю (Нужен ваш совет)</label>
                 <input class="anketa-program__item" id="anketa-item3" type="radio" name="anketa-nonknow">
+                <label" class="anketa-program__label" for="anketa-item3">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="anketa-site__contacts anketa-contacts">
+          <fieldset class="anketa-form__contacts anketa-contacts">
             <legend class="anketa-contacts__title anketa-subtitle">Контактные данные (владельца кота)</legend>
             <ul class="anketa-contacts__list">
               <li class="anketa-contacts__item">
@@ -80,11 +80,33 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="anketa-site__comment anketa-comment">
+          <fieldset class="anketa-form__comment anketa-comment">
             <legend class="anketa-comment__title anketa-subtitle">Комментарий</legend>
             <label" class="anketa-comment__label visually-hidden" for="anketa-comment">Письмо:</label>
             <textarea class="anketa-comment__textarea" id="anketa-comment" name="anketa-comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
+          <fieldset class="anketa-form__checkbox anketa-checkbox">
+            <legend class="anketa-checkbox__title anketa-subtitle">Дополнительно</legend>
+            <ul class="anketa-checkbox__list">
+              <li class="anketa-checkbox__item">
+                <input class="anketa-checkbox__item anketa-checkbox__item--selected" id="anketa-sweetener" type="checkbox" name="anketa-sweetener" checked>
+                <label class="anketa-checkbox__label" for="anketa-sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="anketa-checkbox__item">
+                <input class="anketa-checkbox__item" id="anketa-water" type="checkbox" name="anketa-water">
+                <label class="anketa-checkbox__label" for="anketa-water">Питьевая вода</label>
+              </li>
+              <li class="anketa-checkbox__item">
+                <input class="anketa-checkbox__item" id="anketa-milk" type="checkbox" name="anketa-milk">
+                <label class="anketa-checkbox__label" for="anketa-milk">Молоко</label>
+              </li>
+              <li class="anketa-checkbox__item">
+                <input class="anketa-checkbox__item" id="anketa-vitamins" type="checkbox" name="anketa-vitamins">
+                <label class="anketa-checkbox__label" for="anketa-vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="anketa-button button-energy" type="submit" name="button" value="">Отправить заявку</button>
         </form>
       </section>
       <!-- /.anketa -->
