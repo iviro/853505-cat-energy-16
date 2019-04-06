@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>«Cat energy» Функциональное питание для котов</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="«Cat energy» Функциональное питание для котов">
+        <p><span class="logo--bold">Cat</span> energy</p>
+      </a>
+      <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item  site-list__item--active">
+                <a>Подбор программы</a>
+              </li>
+            </ul>
+          </div> <!-- main-nav__wrapper -->
+        </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-title">Подбор программы</h1>
+      <section class="anketa">
+        <p class="anketa_descriptio">Заполните анкету и мы подберем
+            программу питания для вашего кота</p>
+        <form action="post" class="anketa-form ">
+          <fieldset class="anketa-form__about anketa-about">
+            <legend class="anketa-about__title visually-hidden">О коте</legend>
+            <ul class="anketa-about__list">
+              <li class="anketa-about__item">
+                <label" class="anketa-about__label" for="name-cat">Имя:*</label>
+                <input class="anketa-about__text type="text" name="name-cat" id="name-cat" placeholder="Барсик" autofocus>
+              </li>
+              <li class="anketa-about__item">
+                <label" class="anketa-about__label" for="weight-cat">Вес (кг):*</label>
+                <input class="anketa-about__text type="text" name="weight-cat" id="weight-cat" placeholder="7">
+              </li>
+              <li class="anketa-about__item">
+                <label" class="anketa-about__label" for="age-cat">Возраст (лет):</label>
+                <input class="anketa-about__text type="text" name="age-cat" id="age-cat" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="anketa-form__program anketa-program">
+            <legend class="anketa-program__title visually-hidden">Выбор программы питания</legend>
+            <ul class="anketa-program__list">
+              <li class="anketa-program__item">
+                <input class="anketa-program__item anketa-program__item--selected"  id="anketa-item1" type="radio" name="anketa-slim" checked>
+                <label" class="anketa-program__label" for="anketa-item1">Похудение</label>
+              </li>
+              <li class="anketa-program__item">
+                <input class="anketa-program__item" id="anketa-item2" type="radio" name="anketa-pro">
+                <label" class="anketa-program__label" for="anketa-item2">Набор массы</label>
+              </li>
+              <li class="anketa-program__item">
+                <input class="anketa-program__item" id="anketa-item3" type="radio" name="anketa-nonknow">
+                <label" class="anketa-program__label" for="anketa-item3">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="anketa-form__contacts anketa-contacts">
+            <legend class="anketa-contacts__title anketa-subtitle">Контактные данные (владельца кота)</legend>
+            <ul class="anketa-contacts__list">
+              <li class="anketa-contacts__item anketa-contacts__item--img-mail">
+                <label" class="anketa-contacts__email-label" for="anketa-email">E-mail:*</label>
+                <input class="anketa-contacts__email-input" id="anketa-email" type="text" name="anketa-email" placeholder="kuklachev@gmail.com"">
+              </li>
+              <li class="anketa-contacts__item anketa-contacts__item--img-tel">
+                <label" class="anketa-contacts__phone-label" for="anketa-phone">Телефон:*</label>
+                <input class="anketa-contacts__phone-input" id="anketa-phone" type="text" name="anketa-phone" placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="anketa-form__comment anketa-comment">
+            <legend class="anketa-comment__title anketa-subtitle">Комментарий</legend>
+            <label" class="anketa-comment__label visually-hidden" for="anketa-comment">Письмо:</label>
+            <textarea class="anketa-comment__textarea" id="anketa-comment" name="anketa-comment">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <fieldset class="anketa-form__checkbox anketa-checkbox">
+            <legend class="anketa-checkbox__title anketa-subtitle">Дополнительно</legend>
+            <ul class="anketa-checkbox__list">
+              <li class="anketa-checkbox__item">
+                <input class="anketa-checkbox__item anketa-checkbox__item--selected" id="anketa-sweetener" type="checkbox" name="anketa-sweetener" checked>
+                <label class="anketa-checkbox__label" for="anketa-sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="anketa-checkbox__item">
+                <input class="anketa-checkbox__item" id="anketa-water" type="checkbox" name="anketa-water">
+                <label class="anketa-checkbox__label" for="anketa-water">Питьевая вода</label>
+              </li>
+              <li class="anketa-checkbox__item">
+                <input class="anketa-checkbox__item" id="anketa-milk" type="checkbox" name="anketa-milk">
+                <label class="anketa-checkbox__label" for="anketa-milk">Молоко</label>
+              </li>
+              <li class="anketa-checkbox__item">
+                <input class="anketa-checkbox__item" id="anketa-vitamins" type="checkbox" name="anketa-vitamins">
+                <label class="anketa-checkbox__label" for="anketa-vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="anketa-button button-energy" type="submit" name="button" value="">Отправить заявку</button>
+        </form>
+        <p class="anketa-note">* — Обязательные поля</p>
+      </section>
+      <!-- /.anketa -->
+    </main>
+    <footer class="page-footer">
+      <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address"></address>
+          <a class="contacts__address-linc" href="geo:59.938631, 30.323055">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</a>
+          <img  class="contacts__map contacts__map--pin" src="http://placehold.it/320x362" width="100%" height="362" alt="Карта">
+      </section> <!-- contacts -->
+      <section class="footer-link">
+        <a class="footer-link__logo" href="#" >
+          <span class="logo--bold">Cat</span> Enegy
+        </a>
+        <ul class="footer-social footer-social__line--before footer-social__line--after">
+          <li class="footer-social__item visually-hidden">Вконтакте</li>
+          <li class="footer-social__item visually-hidden">Инстаграмм</li>
+          <li class="footer-social__item visually-hidden">Фэйсбук</li>
+        </ul>
+        <a class="footer-link__copyright" href="https://htmlacademy.ru/">
+          <p class="footer__copyright--text">HTML Academy</p>
+          <img class="footer__copyright--logo" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
