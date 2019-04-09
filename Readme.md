@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виринея Абросимова](https://up.htmlacademy.ru/adaptive/16/user/853505).
-* Наставник: [Анна Лёмина](https://up.htmlacademy.ru/adaptive/16/user/83874).
+* Наставник: [Магомед Кандаев](https://htmlacademy.ru/profile/id161600).
 
 ---
 
