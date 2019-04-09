@@ -30,9 +30,9 @@
     <main class="page-main">
       <h1 class="page-title">Подбор программы</h1>
       <section class="anketa">
-        <p class="anketa_descriptio">Заполните анкету и мы подберем
+        <p class="anketa__description">Заполните анкету и мы подберем
             программу питания для вашего кота</p>
-        <form action="post" class="anketa-form ">
+        <form action="post" class="anketa-form">
           <fieldset class="anketa-form__about anketa-about">
             <legend class="anketa-about__title visually-hidden">О коте</legend>
             <ul class="anketa-about__list">
@@ -49,7 +49,7 @@
                 <input class="anketa-about__text type="text" name="age-cat" id="age-cat" placeholder="7">
               </li>
             </ul>
-          </fieldset>
+          </fieldset> <!-- anketa-about -->
           <fieldset class="anketa-form__program anketa-program">
             <legend class="anketa-program__title visually-hidden">Выбор программы питания</legend>
             <ul class="anketa-program__list">
@@ -66,7 +66,7 @@
                 <label" class="anketa-program__label" for="anketa-item3">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
-          </fieldset>
+          </fieldset> <!-- anketa-program -->
           <fieldset class="anketa-form__contacts anketa-contacts">
             <legend class="anketa-contacts__title anketa-subtitle">Контактные данные (владельца кота)</legend>
             <ul class="anketa-contacts__list">
@@ -79,12 +79,12 @@
                 <input class="anketa-contacts__phone-input" id="anketa-phone" type="text" name="anketa-phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
-          </fieldset>
+          </fieldset> <!-- anketa-contacts -->
           <fieldset class="anketa-form__comment anketa-comment">
             <legend class="anketa-comment__title anketa-subtitle">Комментарий</legend>
             <label" class="anketa-comment__label visually-hidden" for="anketa-comment">Письмо:</label>
             <textarea class="anketa-comment__textarea" id="anketa-comment" name="anketa-comment">Расскажите обо всех повадках кота</textarea>
-          </fieldset>
+          </fieldset> <!-- anketa-comment -->
           <fieldset class="anketa-form__checkbox anketa-checkbox">
             <legend class="anketa-checkbox__title anketa-subtitle">Дополнительно</legend>
             <ul class="anketa-checkbox__list">
@@ -105,11 +105,11 @@
                 <label class="anketa-checkbox__label" for="anketa-vitamins">Витамины</label>
               </li>
             </ul>
-          </fieldset>
-          <button class="anketa-button button-energy" type="submit" name="button" value="">Отправить заявку</button>
+          </fieldset> <!-- anketa-checkbox -->
+          <button class="anketa__button button-energy" type="submit" name="button" value="">Отправить заявку</button>
         </form>
-        <p class="anketa-note">* — Обязательные поля</p>
-      </section> <!-- /.anketa -->
+        <p class="anketa__note">* — Обязательные поля</p>
+      </section> <!-- anketa -->
     </main> <!-- main -->
     <footer class="page-footer">
       <section class="footer-contacts">
