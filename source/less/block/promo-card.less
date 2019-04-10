@@ -1,17 +1,18 @@
   .promo-card {
+    background-color: @color-light;
     &--slim {
     }
     &--pro {
     }
     &__title {
-      .font-header(@_transform: uppercase);
+      .font-header(@_font-size: 24px, @_line-height: 37px, @_transform: uppercase);
     }
     &__text {
       .font-text;
     }
     &__link {
       .a-reset;
-      .font-header(@_transform: uppercase);
+      .font-header(@_font-size: 15px, @_line-height: 16px, @_transform: uppercase);
       &--arrow {
       }
       &:hover {}
