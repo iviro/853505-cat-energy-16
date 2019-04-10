@@ -1,15 +1,21 @@
-.promo-card {
-  &--pro {
-  }
-  &__title {
-  }
-  &__text {
-  }
-  &__link {
-    &--arrow {
+  .promo-card {
+    &--slim {
     }
-    &:hover {}
-    &:active {}
-    &:focus {}
+    &--pro {
+    }
+    &__title {
+      .font-header(@_transform: uppercase);
+    }
+    &__text {
+      .font-text;
+    }
+    &__link {
+      .a-reset;
+      .font-header(@_transform: uppercase);
+      &--arrow {
+      }
+      &:hover {}
+      &:active {}
+      &:focus {}
+    }
   }
-}
