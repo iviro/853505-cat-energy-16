@@ -21,21 +21,32 @@ nav li {
   background-color: @_color;
 }
 
-.font-text(@_font-size: 14px, @_line-height: 18px) {
+.font-text(@_font-size: 14px, @_line-height: 18px, @_text-align: left, @_color: @color-text) {
   font-family: @font-text;
   font-size: @_font-size;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: @_line-height;
-  text-align: left;
-  color: @color-text;
+  text-align: @_text-align;
+  color: @_color;
 }
 
 .font-header(@_font-size: 36px, @_line-height: 60px, @_text-align: left, @_color: @color-header) {
   font-family: @font-header;
   font-size: @_font-size;
   font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: @_line-height;
+  text-align: @_text-align;
+  color: @_color;
+}
+
+.font-nav(@_font-size: 20px, @_line-height: 20px, @_text-align: center, @_color: @color-header) {
+  font-family: @font-header;
+  font-size: @_font-size;
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: @_line-height;
