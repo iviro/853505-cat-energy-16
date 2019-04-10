@@ -9,12 +9,18 @@
 
     }
     &__title {
-      .font-header;
+      .font-header(@_font-size: 36px, @_line-height: 36px, @_color: @color-alt, @_text-align: center);
+      padding-top: 29px;
+      padding-bottom: 19px;
+      margin: 0;
     }
     &__slogan {
-      .font-header;
+      .font-header(@_font-size: 13.5px, @_line-height: 13.5px, @_color: @color-alt, @_text-align: center, @_transform: uppercase);
+      margin: 0;
+      padding: 0;
     }
     &__product {
+      .mob-center(231px);
     }
 
     &__choice {
@@ -25,5 +31,6 @@
     }
 
     &__wrap {
+
     }
   }
