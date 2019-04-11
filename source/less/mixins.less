@@ -18,6 +18,11 @@
   width: @_width;
   margin: 0 auto;
 }
+.mob-indent-block(@_margin-bottom: 20px) {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: @_margin-bottom;
+}
 
 .button-mob(@_color: @color-green) {
   display: block;
@@ -26,7 +31,6 @@
   background-color: @_color;
   .font-header(@_font-size: 13.5px, @_line-height: 18px, @_text-align: center, @_color: @color-alt, @_transform: uppercase);
 }
-
 .font-text(@_font-size: 14px, @_line-height: 18px, @_text-align: left, @_color: @color-text) {
   font-family: @font-text;
   font-size: @_font-size;
@@ -37,7 +41,6 @@
   text-align: @_text-align;
   color: @_color;
 }
-
 .font-header(@_font-size: 36px, @_line-height: 60px, @_transform: none, @_text-align: left, @_color: @color-header) {
   font-family: @font-header;
   font-size: @_font-size;
@@ -49,7 +52,6 @@
   text-align: @_text-align;
   color: @_color;
 }
-
 .font-select(@_font-size: 16px, @_line-height: 20px, @_transform: uppercase, @_text-align: center, @_color: @color-header) {
   font-family: @font-header;
   font-size: @_font-size;
@@ -61,7 +63,6 @@
   text-align: @_text-align;
   color: @_color;
 }
-
 .font-nav(@_font-size: 20px, @_line-height: 20px, @_text-align: center, @_color: @color-header) {
   font-family: @font-header;
   font-size: @_font-size;
