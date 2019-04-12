@@ -1,9 +1,23 @@
-
   .catalog-promo {
+    .mob-center(280px);
+    height: 289px;
+    background-color: @color-green;
+    background-image: url(/img/gift-photo-mobile@1x.jpg);
+    background-repeat: no-repeat;
     &__gift {
+      display: block;
+      width: 60px;
+      height: 55px;
+      color: @color-alt;
+      margin: 0 auto;
+      padding-top: 65px;
     }
     &__bg-img {
     }
     &__text {
+      width: 159px;
+      margin: 0 auto;
+      padding-top: 65px;
+      .font-text(@_font-size: 16px, @_line-height: 20px, @_text-align: center, @_color: @color-alt);
     }
   }
