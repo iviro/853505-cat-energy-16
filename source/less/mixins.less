@@ -29,9 +29,11 @@
   padding-top: 13px;
   padding-bottom: 11px;
   background-color: @_color;
-  .font-header(@_font-size: 13.5px, @_line-height: 18px, @_text-align: center, @_color: @color-alt, @_transform: uppercase);
+  .font-header(@_font-size: 13.5px, @_line-height: 18px,
+  @_text-align: center, @_color: @color-alt, @_transform: uppercase);
 }
-.font-text(@_font-size: 14px, @_line-height: 18px, @_text-align: left, @_color: @color-text) {
+.font-text(@_font-size: 14px, @_line-height: 18px,
+           @_text-align: left, @_color: @color-text) {
   font-family: @font-text;
   font-size: @_font-size;
   font-weight: normal;
@@ -41,7 +43,8 @@
   text-align: @_text-align;
   color: @_color;
 }
-.font-header(@_font-size: 36px, @_line-height: 60px, @_transform: none, @_text-align: left, @_color: @color-header) {
+.font-header(@_font-size: 36px, @_line-height: 60px, @_transform: none,
+             @_text-align: left, @_color: @color-header) {
   font-family: @font-header;
   font-size: @_font-size;
   font-weight: normal;
@@ -52,7 +55,8 @@
   text-align: @_text-align;
   color: @_color;
 }
-.font-select(@_font-size: 16px, @_line-height: 20px, @_transform: uppercase, @_text-align: center, @_color: @color-header) {
+.font-select(@_font-size: 16px, @_line-height: 20px, @_transform: uppercase,
+             @_text-align: center, @_color: @color-header) {
   font-family: @font-header;
   font-size: @_font-size;
   font-weight: normal;
@@ -63,13 +67,15 @@
   text-align: @_text-align;
   color: @_color;
 }
-.font-nav(@_font-size: 20px, @_line-height: 20px, @_text-align: center, @_color: @color-header) {
+.font-nav(@_font-size: 20px, @_line-height: 20px, @_transform: uppercase,
+          @_text-align: center, @_color: @color-header) {
   font-family: @font-header;
   font-size: @_font-size;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: @_line-height;
+  text-transform: @_transform;
   text-align: @_text-align;
   color: @_color;
 }
