@@ -2,55 +2,55 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>«Cat energy» Функциональное питание для котов</title>
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="«Cat energy» Функциональное питание для котов">
-        <p><span class="logo--bold">Cat</span> energy</p>
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="«Cat energy» Функциональное питание для котов">
       </a>
       <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="index.html">Главная</a>
+            <ul class="main-nav__list nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
-                <a href="catalog.html">Каталог продукции</a>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="site-list__item  site-list__item--active">
-                <a>Подбор программы</a>
+              <li class="nav-list__item">
+                <a class="nav-list__link  nav-list__link--active" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div> <!-- main-nav__wrapper -->
-        </nav>
+        </nav> <!-- main-nav -->
     </header>
     <main class="page-main">
-      <h1 class="page-title">Подбор программы</h1>
+      <h1 class="page-main__title">Подбор программы</h1>
       <section class="anketa">
-        <p class="anketa_descriptio">Заполните анкету и мы подберем
+        <p class="anketa__description">Заполните анкету и мы подберем
             программу питания для вашего кота</p>
-        <form action="post" class="anketa-form ">
-          <fieldset class="anketa-form__about anketa-about">
+        <form action="post" class="anketa-form">
+          <fieldset class="anketa-form__item anketa-about">
             <legend class="anketa-about__title visually-hidden">О коте</legend>
             <ul class="anketa-about__list">
               <li class="anketa-about__item">
                 <label" class="anketa-about__label" for="name-cat">Имя:*</label>
-                <input class="anketa-about__text type="text" name="name-cat" id="name-cat" placeholder="Барсик" autofocus>
+                <input class="anketa-about__text anketa-about__text-name" type="text" name="name-cat" id="name-cat" placeholder="Барсик" autofocus>
               </li>
               <li class="anketa-about__item">
                 <label" class="anketa-about__label" for="weight-cat">Вес (кг):*</label>
-                <input class="anketa-about__text type="text" name="weight-cat" id="weight-cat" placeholder="7">
+                <input class="anketa-about__text anketa-about__text-weight" type="text" name="weight-cat" id="weight-cat" placeholder="7">
               </li>
               <li class="anketa-about__item">
                 <label" class="anketa-about__label" for="age-cat">Возраст (лет):</label>
-                <input class="anketa-about__text type="text" name="age-cat" id="age-cat" placeholder="7">
+                <input class="anketa-about__text anketa-about__text-age" type="text" name="age-cat" id="age-cat" placeholder="7">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="anketa-form__program anketa-program">
+          </fieldset> <!-- anketa-about -->
+          <fieldset class="anketa-form__item anketa-program">
             <legend class="anketa-program__title visually-hidden">Выбор программы питания</legend>
             <ul class="anketa-program__list">
               <li class="anketa-program__item">
@@ -66,9 +66,9 @@
                 <label" class="anketa-program__label" for="anketa-item3">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="anketa-form__contacts anketa-contacts">
-            <legend class="anketa-contacts__title anketa-subtitle">Контактные данные (владельца кота)</legend>
+          </fieldset> <!-- anketa-program -->
+          <fieldset class="anketa-form__item anketa-contacts">
+            <legend class="anketa-contacts__title anketa-form__title">Контактные данные<span class="anketa-contacts__title--br">(владельца кота)</span></legend>
             <ul class="anketa-contacts__list">
               <li class="anketa-contacts__item anketa-contacts__item--img-mail">
                 <label" class="anketa-contacts__email-label" for="anketa-email">E-mail:*</label>
@@ -79,14 +79,14 @@
                 <input class="anketa-contacts__phone-input" id="anketa-phone" type="text" name="anketa-phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="anketa-form__comment anketa-comment">
-            <legend class="anketa-comment__title anketa-subtitle">Комментарий</legend>
+          </fieldset> <!-- anketa-contacts -->
+          <fieldset class="anketa-form__item anketa-comment">
+            <legend class="anketa-comment__title anketa-form__title">Комментарий</legend>
             <label" class="anketa-comment__label visually-hidden" for="anketa-comment">Письмо:</label>
             <textarea class="anketa-comment__textarea" id="anketa-comment" name="anketa-comment">Расскажите обо всех повадках кота</textarea>
-          </fieldset>
-          <fieldset class="anketa-form__checkbox anketa-checkbox">
-            <legend class="anketa-checkbox__title anketa-subtitle">Дополнительно</legend>
+          </fieldset> <!-- anketa-comment -->
+          <fieldset class="anketa-form__item anketa-checkbox">
+            <legend class="anketa-checkbox__title anketa-form__title">Дополнительно</legend>
             <ul class="anketa-checkbox__list">
               <li class="anketa-checkbox__item">
                 <input class="anketa-checkbox__item anketa-checkbox__item--selected" id="anketa-sweetener" type="checkbox" name="anketa-sweetener" checked>
@@ -105,35 +105,43 @@
                 <label class="anketa-checkbox__label" for="anketa-vitamins">Витамины</label>
               </li>
             </ul>
-          </fieldset>
-          <button class="anketa-button button-energy" type="submit" name="button" value="">Отправить заявку</button>
+          </fieldset> <!-- anketa-checkbox -->
+          <button class="anketa__button button-energy" type="submit" name="button" value="">Отправить заявку</button>
         </form>
-        <p class="anketa-note">* — Обязательные поля</p>
-      </section>
-      <!-- /.anketa -->
-    </main>
-    <footer class="page-footer">
-      <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address"></address>
-          <a class="contacts__address-linc" href="geo:59.938631, 30.323055">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</a>
-          <img  class="contacts__map contacts__map--pin" src="http://placehold.it/320x362" width="100%" height="362" alt="Карта">
-      </section> <!-- contacts -->
-      <section class="footer-link">
-        <a class="footer-link__logo" href="#" >
-          <span class="logo--bold">Cat</span> Enegy
-        </a>
-        <ul class="footer-social footer-social__line--before footer-social__line--after">
-          <li class="footer-social__item visually-hidden">Вконтакте</li>
-          <li class="footer-social__item visually-hidden">Инстаграмм</li>
-          <li class="footer-social__item visually-hidden">Фэйсбук</li>
-        </ul>
-        <a class="footer-link__copyright" href="https://htmlacademy.ru/">
-          <p class="footer__copyright--text">HTML Academy</p>
-          <img class="footer__copyright--logo" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
-        </a>
-      </section>
-    </footer>
+        <p class="anketa__note">* — Обязательные поля</p>
+      </section> <!-- anketa -->
+    </main> <!-- main -->
+    <footer class="footer">
+        <section class="footer-contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="footer-contacts__wrap">
+              <p class="footer-contacts__title">приглашаем к сотрудничеству дилеров!</p>
+              <address class="footer-contacts__address">
+                <a class="footer-contacts__address-linc" href="geo:59.938631, 30.323055">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</a>
+              </address>
+            </div>
+            <img  class="footer-contacts__map footer-contacts__map--pin" src="/img/bg-map-mobile@1x.png" width="320" height="362" alt="Карта">
+        </section> <!-- footer-contacts -->
+        <section class="footer-back">
+          <a class="footer-logo" href="#" >
+            <img class="footer-logo__link-image" src="img/logo-footer.svg" width="128" height="24" alt="«Cat energy» Функциональное питание для котов">
+          </a> <!-- footer-logo -->
+          <ul class="footer-social footer-social--line-before footer-social--line-after">
+            <li class="footer-social__vkontakte footer-social__item">
+              <a class="footer-social__link" href="#">Вконтакте</a>
+            </li>
+            <li class="footer-social__instagramm footer-social__item">
+              <a class="footer-social__link" href="#">Инстаграмм</a>
+            </li>
+            <li class="footer-social__facebook footer-social__item">
+              <a class="footer-social__link" href="#">Фэйсбук</a>
+            </li>
+          </ul> <!-- footer-social -->
+          <a class="footer-copyright" href="https://htmlacademy.ru/">
+            <p class="footer-copyright__text">HTML Academy</p>
+            <img class="footer_copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a> <!-- footer-copyright -->
+        </section> <!-- footer-back -->
+    </footer> <!-- footer -->
   </body>
 </html>

@@ -5,6 +5,9 @@
 *.log
 *.pdf
 *.psd
+*.bat
+*.xlsx
+*.docx
 *.sublime*
 node_modules/
 npm-debug.*
@@ -15,3 +18,5 @@ desktop.ini
 TODO
 -grafo
 archive.zip
+list.txt
+*.code-workspace

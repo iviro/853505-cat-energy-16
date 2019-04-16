@@ -1,0 +1,37 @@
+.anketa-about {
+  .mob-center;
+  border: none;
+  padding: 0 20px;
+  padding-bottom: 23px;
+  &__title {
+    .font-select;
+  }
+
+  &__list {
+    .li-reset;
+    .font-select(@_font-size: 15.5px, @_line-height: 18px, @_text-align: left);
+  }
+  &__item {
+    margin-bottom: 14px;
+  }
+  &__item input[placeholder] {
+    .font-select(@_font-size: 15.5px, @_line-height: 18px, @_text-align: left, @_color: @color-text);
+  }
+  &__label {
+  }
+  &__text {
+    .mob-input;
+  }
+  &__text-name {
+    width: 229px;
+    margin-left: 15px;
+  }
+  &__text-weight {
+    width: 204px;
+    margin-left: 18px;
+  }
+  &__text-age {
+    width: 172px;
+    margin-left: 16px;
+  }
+}

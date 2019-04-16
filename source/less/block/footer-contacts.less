@@ -1,0 +1,27 @@
+.footer-contacts {
+  &__title {
+    .font-select(@_text-align: left);
+    margin: 0;
+    margin-right: 10px;
+  }
+  &__address {
+    margin-left: 10px;
+  }
+  &__address-linc {
+    .a-reset;
+    .font-text(@_line-height: 20px);
+      &:hover {}
+      &:active {}
+      &:focus {}
+    }
+  &__map {
+    &--pin {
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    .mob-indent-block(26px);
+    margin-top: 31px;
+  }
+}
