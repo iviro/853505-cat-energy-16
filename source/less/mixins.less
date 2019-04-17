@@ -66,10 +66,30 @@
   margin: 0 auto;
 }
 
+.button-tab(@_color: @color-green) {
+  .btn-reset;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  background-color: @_color;
+  .font-header(@_font-size: 20px, @_line-height: 20px,
+  @_text-align: center, @_color: @color-alt, @_transform: uppercase);
+}
+
 //десктоп
 .desk-center(@_width: @desktop-width) {
   width: @_width;
   margin: 0 auto;
+}
+
+.button-desk(@_color: @color-green) {
+  .btn-reset;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  background-color: @_color;
+  .font-header(@_font-size: 20px, @_line-height: 20px,
+  @_text-align: center, @_color: @color-alt, @_transform: uppercase);
 }
 
 // текст

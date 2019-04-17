@@ -1,39 +1,154 @@
 .promo {
-  .mob-center;
-  .mob-indent-block(12px);
+
   &__header {
-    margin-bottom: 22px;
+    position: relative;
+    margin-bottom: 197px;
   }
+
   &__background {
-    height: 305px;
     background-color: @color-green;
     background-image: url(/img/index-background-mobile@1x.jpg);
     background-repeat: no-repeat;
-
   }
+
   &__title {
     .font-header(@_font-size: 36px, @_line-height: 36px, @_color: @color-alt, @_text-align: center);
     padding-top: 29px;
     padding-bottom: 19px;
     margin: 0;
   }
+
   &__slogan {
     .font-header(@_font-size: 13.5px, @_line-height: 13.5px, @_color: @color-alt, @_text-align: center, @_transform: uppercase);
     margin: 0;
     padding: 0;
   }
+
   &__product {
+    position: absolute;
+    top:  167px;
+    right: 45px;
     .mob-center(231px);
   }
 
   &__choice {
     .a-reset;
-    &:hover {}
-    &:active {}
-    &:focus {}
+
+    &:hover {
+    }
+
+    &:active {
+    }
+
+    &:focus {
+    }
   }
 
   &__wrap {
+
+  }
+}
+
+//мобильный
+@media (max-width: @tablet-width) {
+  .promo {
+    .mob-center;
+    .mob-indent-block(12px);
+
+    &__header {
+
+    }
+
+    &__background {
+      height: 305px;
+    }
+
+    &__title {
+
+    }
+
+    &__slogan {
+
+    }
+
+    &__product {
+
+    }
+
+    &__choice {
+      position: absolute;
+      display: block;
+      bottom: -165px;
+      right: 20px;
+      padding:  14px 73px 11px;
+    }
+
+  }
+}
+
+//планшет
+@media (min-width: @tablet-width) {
+  .promo {
+    .tab-center;
+    &__header {
+      margin-bottom: 600px;
+    }
+
+    &__background {
+      background: none;
+    }
+
+    &__title {
+      .font-header(@_font-size: 60px, @_line-height: 60px, @_text-align: left);
+      padding-top: 0px;
+      padding-right: 200px;
+      padding-bottom: 33px;
+    }
+
+    &__slogan {
+      .font-header(@_font-size: 20px, @_line-height: 20px, @_text-align: left, @_transform: uppercase);
+      margin-bottom: 48px;
+    }
+
+    &__product {
+      width: 709px;
+      height: 609px;
+      margin-top: 35px;
+      z-index: -1;
+    }
+
+    &__choice {
+      display: inline-block;
+      padding:  17px 29px 15px 26px;
+    }
+  }
+}
+
+//десктоп
+@media (min-width: @desktop-width) {
+  .promo {
+    .desk-center;
+    &__header {
+
+    }
+
+    &__background {
+    }
+
+    &__title {
+
+    }
+
+    &__slogan {
+
+    }
+
+    &__product {
+
+    }
+
+    &__choice {
+    }
 
   }
 }

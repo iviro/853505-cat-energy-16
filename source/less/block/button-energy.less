@@ -6,3 +6,17 @@
   .button-mob(@_color: @color-light);
   .font-header(@_font-size: 16px, @_line-height: 20px, @_text-align: center, @_color: @color-header, @_transform: uppercase);
 }
+
+//планшет
+@media (min-width: @tablet-width) {
+  .button-energy {
+    .button-tab;
+  }
+}
+
+//десктоп
+@media (min-width: @desktop-width) {
+  .button-energy {
+    .button-desk;
+  }
+}

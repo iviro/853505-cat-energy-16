@@ -4,3 +4,19 @@
     .font-header;
   }
 }
+
+//планшет
+@media (min-width: @tablet-width) {
+  .tab-center(@_width: @tablet-width) {
+  width: @_width;
+  margin: 0 auto;
+  }
+}
+
+//десктоп
+@media (min-width: @desktop-width) {
+  .desk-center(@_width: @desktop-width) {
+  width: @_width;
+  margin: 0 auto;
+  }
+}
