@@ -6,9 +6,6 @@
   }
 
   &__background {
-    background-color: @color-green;
-    background-image: url(/img/index-background-mobile@1x.jpg);
-    background-repeat: no-repeat;
   }
 
   &__title {
@@ -61,6 +58,9 @@
 
     &__background {
       height: 305px;
+      background-color: @color-green;
+      background-image: url(/img/index-background-mobile@1x.jpg);
+      background-repeat: no-repeat;
     }
 
     &__title {
@@ -129,26 +129,52 @@
   .promo {
     .desk-center;
     &__header {
-
+      margin-bottom: 290px;
     }
 
     &__background {
+      position: relative;
+      margin-left: 193px;
+      margin-right: 700px;
+    }
+    &__background::after {
+      content: "";
+      position: absolute;
+      width: 720px;
+      height: 696px;
+      background-color: @color-green;
+      background-image: url(/img/index-background-desktop@1x.jpg);
+      background-repeat: no-repeat;
+      top: -220px;
+      right: -700px;
+      z-index: -1;
     }
 
     &__title {
-
+      padding-right: 0px;
     }
 
     &__slogan {
-
     }
 
     &__product {
-
+      position: absolute;
+      width: 552px;
+      height: 499px;
+      top: -100px;
+      right: 300px;
     }
 
     &__choice {
+      margin-left: 193px;
     }
 
+  }
+
+  .promo__wrap {
+    .desk-center;
+    padding: 0px 70px;
+    display: flex;
+    flex-direction: row;
   }
 }
