@@ -14,8 +14,19 @@
   background-color: transparent;
   cursor: pointer;
 }
+.visually-hidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
 
-.mob-center(@_width: 320px) {
+
+.mob-center(@_width: @mobail-width) {
   width: @_width;
   margin: 0 auto;
 }
@@ -30,6 +41,16 @@
   padding: 15px;
   background: none;
   border: solid 1px @color-border;
+}
+
+.tab-center(@_width: @tablet-width) {
+  width: @_width;
+  margin: 0 auto;
+}
+
+.desk-center(@_width: @desktop-width) {
+  width: @_width;
+  margin: 0 auto;
 }
 
 .button-mob(@_color: @color-green) {

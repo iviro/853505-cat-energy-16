@@ -1,11 +1,35 @@
 .main-nav {
-
+  position: relative;
   &__toggle {
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    .btn-reset;
+    top: -47px;
+    background-image: url(/img/icon-close.svg);
+    background-repeat: no-repeat;
+    right: 0px;
+    z-index: 2;
+    cursor: pointer;
     &:hover {}
     &:active {}
     &:focus {}
   }
   &__wrapper {
-
   }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    position: static;
+    margin-top: 10px;
+    &__toggle {
+    display: none;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
 }
