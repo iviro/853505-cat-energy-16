@@ -1,19 +1,24 @@
+//сброс
 .li-reset(@padding-left: 0) {
   margin: 0;
   padding-left: @padding-left;
   list-style: none;
 }
+
 .a-reset() {
   text-decoration: none;
   text-decoration-color: none;
   text-decoration-line: none;
 }
+
 .btn-reset() {
   border: none;
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
 }
+
+//скрыть
 .visually-hidden() {
   position: absolute;
   overflow: hidden;
@@ -25,32 +30,24 @@
   border: 0;
 }
 
-
+//мобильный
 .mob-center(@_width: @mobile-width) {
   width: @_width;
   margin: 0 auto;
 }
+
 .mob-indent-block(@_margin-bottom: 20px) {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: @_margin-bottom;
 }
+
 .mob-input (@_height: 45px) {
   box-sizing: border-box;
   height: @_height;
   padding: 15px;
   background: none;
   border: solid 1px @color-border;
-}
-
-.tab-center(@_width: @tablet-width) {
-  width: @_width;
-  margin: 0 auto;
-}
-
-.desk-center(@_width: @desktop-width) {
-  width: @_width;
-  margin: 0 auto;
 }
 
 .button-mob(@_color: @color-green) {
@@ -62,6 +59,20 @@
   .font-header(@_font-size: 13.5px, @_line-height: 18px,
   @_text-align: center, @_color: @color-alt, @_transform: uppercase);
 }
+
+//планшет
+.tab-center(@_width: @tablet-width) {
+  width: @_width;
+  margin: 0 auto;
+}
+
+//десктоп
+.desk-center(@_width: @desktop-width) {
+  width: @_width;
+  margin: 0 auto;
+}
+
+// текст
 .font-text(@_font-size: 14px, @_line-height: 18px,
             @_text-align: left, @_color: @color-text) {
   font-family: @font-text;
@@ -73,6 +84,7 @@
   text-align: @_text-align;
   color: @_color;
 }
+
 .font-header(@_font-size: 36px, @_line-height: 60px, @_transform: none,
               @_text-align: left, @_color: @color-header) {
   font-family: @font-header;
@@ -85,6 +97,7 @@
   text-align: @_text-align;
   color: @_color;
 }
+
 .font-select(@_font-size: 16px, @_line-height: 20px, @_transform: uppercase,
               @_text-align: center, @_color: @color-header) {
   font-family: @font-header;
@@ -97,6 +110,7 @@
   text-align: @_text-align;
   color: @_color;
 }
+
 .font-nav(@_font-size: 20px, @_line-height: 20px, @_transform: uppercase,
           @_text-align: center, @_color: @color-header) {
   font-family: @font-header;

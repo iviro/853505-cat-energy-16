@@ -2,6 +2,7 @@
   .li-reset;
   display: flex;
   align-content: center;
+
   &__item {
     display: block;
     box-sizing: border-box;
@@ -9,21 +10,26 @@
     &--active {
     }
   }
+
+//ссылка
   &__link {
     .a-reset;
     .font-nav;
     &--active{
       margin: 0;
     }
+
     &:hover {}
     &:active {}
     &:focus {}
   }
 }
 
+//телефон
 @media (max-width: @tablet-width) {
   .nav-list {
     flex-direction: column;
+
     &__item {
       width: 320px;
       padding-top: 24px;
@@ -32,6 +38,7 @@
       &--active {
       }
     }
+
     &__link {
       display: block;
       margin: 0 auto;
@@ -41,14 +48,17 @@
   }
 }
 
+//планшет
 @media (min-width: @tablet-width) {
   .nav-list {
     &__item {
       border-bottom: 0;
       padding-left: 36px;
     }
+
     &__link {
       .font-nav(@_font-size: 18px, @_line-height: 25px, @_text-align: left);
+
       &--active {
         padding-bottom: 6px;
         border-bottom: 2px solid @color-green;
@@ -57,6 +67,7 @@
   }
 }
 
+//десктоп
 @media (min-width: @desktop-width) {
   .nav-list {
     &__item {
@@ -64,6 +75,7 @@
     }
     &__link {
       .font-nav(@_font-size: 20px, @_line-height: 25px);
+
       &--active {
         padding-bottom: 6px;
         border-bottom: 2px solid @color-green;

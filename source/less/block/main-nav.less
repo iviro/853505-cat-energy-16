@@ -1,5 +1,7 @@
 .main-nav {
   position: relative;
+
+//кнопка
   &__toggle {
     display: block;
     position: absolute;
@@ -16,10 +18,12 @@
     &:active {}
     &:focus {}
   }
+
   &__wrapper {
   }
 }
 
+//планшет
 @media (min-width: @tablet-width) {
   .main-nav {
     position: static;
@@ -30,6 +34,6 @@
   }
 }
 
-
+//десктоп
 @media (min-width: @desktop-width) {
 }

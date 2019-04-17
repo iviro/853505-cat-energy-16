@@ -5,17 +5,25 @@
   padding-bottom: 11px;
   padding-left: 20px;
   padding-right: 20px;
+
+//логотип
   &__logo {
     padding-bottom: 15px;
     border-bottom: 1px solid @color-border;
+
+    &:hover {
+    }
+    &:active {
+    }
+    &:focus {
+    }
+
     &__logo-image {
     }
-    &:hover {}
-    &:active {}
-    &:focus {}
   }
 }
 
+//планшет
 @media (min-width: @tablet-width) {
   .page-header {
     flex-direction: row;
@@ -26,6 +34,8 @@
     padding-bottom: 63px;
     padding-left: 30px;
     padding-right: 30px;
+
+//логотип
     &__logo {
       width: 174px;
       border-bottom: none;
@@ -33,6 +43,7 @@
   }
 }
 
+//десктоп
 @media (min-width: @desktop-width) {
   .page-header {
     .desk-center;
@@ -40,12 +51,12 @@
     padding-bottom: 81px;
     padding-left: 110px;
     padding-right: 110px;
+
+//логотип
     &__logo {
       width: 203px;
       height: 60px;
       border-bottom: none;
-    }
-    &__logo {
     }
   }
 }
