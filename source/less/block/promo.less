@@ -40,10 +40,6 @@
     &:focus {
     }
   }
-
-  &__wrap {
-
-  }
 }
 
 //мобильный
@@ -82,7 +78,9 @@
       right: 20px;
       padding:  14px 73px 11px;
     }
-
+    &__wrap {
+      .mob-indent-block;
+    }
   }
 }
 
@@ -169,12 +167,14 @@
       margin-left: 193px;
     }
 
+    &__item:first-child {
+      margin-right: 80px;
+    }
   }
 
   .promo__wrap {
-    .desk-center;
-    padding: 0px 70px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 110px;
   }
 }

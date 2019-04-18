@@ -1,19 +1,64 @@
 .promo-card {
   background-color: @color-light;
   padding-top: 39px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 21px;
+  padding-right: 36px;
   margin-bottom: 20px;
 
-  &--slim {
+  &--slim,
+  &--pro {
+    position: relative;
   }
 
-  &--pro {
+  &--slim::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: @color-green;
+    border-radius: 50%;
+    top: 33px;
+    left:  18px;
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 49px;
+    background-image: url(/img/icon-cat-slim.svg);
+    background-repeat: no-repeat;
+    top: 28px;
+    left:  28px;
+  }
+
+  &--pro::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: @color-green;
+    border-radius: 50%;
+    top: 28px;
+    left:  18px;
+  }
+
+  &--pro::after {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    background-image: url(/img/icon-cat-pro.svg);
+    background-repeat: no-repeat;
+    top: 38px;
+    left:  8px;
   }
 
   &__title {
     .font-header(@_font-size: 24px, @_line-height: 37px, @_transform: uppercase);
+    margin: 0px;
+    margin-left: 72px;
   }
 
   &__text {
@@ -21,10 +66,19 @@
   }
 
   &__link {
+    position: relative;
     .a-reset;
     .font-header(@_font-size: 16px, @_line-height: 16px, @_transform: uppercase);
 
-    &--arrow {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 12px;
+      background-image: url(/img/icon-right-arrow-long.svg);
+      background-repeat: no-repeat;
+      bottom: 5px;
+      right: -37px;
     }
 
     &:hover {
@@ -38,14 +92,118 @@
   }
 }
 
+//мобильный
+@media (max-width: @tablet-width) {
+  .promo-card {
+    &__text {
+      padding-bottom: 23px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+    }
+  }
+}
+
 //планшет
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width){
+  .promo-card {
+    padding-top: 81px;
+    padding-bottom: 62px;
+    padding-left: 52px;
+    padding-right: 74px;
+    margin-bottom: 20px;
+
+    &__title {
+      .font-header(@_line-height: 37px, @_transform: uppercase);
+    }
+
+    &__text {
+      .font-text(@_font-size: 16px, @_line-height: 24px);
+    }
+    &__link {
+      .font-header(@_font-size: 20px, @_line-height: 20px, @_transform: uppercase);
+    }
+  }
+}
+
+@media (min-width: @tablet-width) and  (max-width: @desktop-width)  {
+  .promo-card {
+    &--slim::before {
+      width: 200px;
+      height: 200px;
+      top: 88px;
+      left:  508px;
+    }
+
+    &--slim::after {
+      width: 141px;
+      height: 194px;
+      top: 78px;
+      left: 538px;
+    }
+
+    &--pro::before {
+      width: 200px;
+      height: 200px;
+      top: 88px;
+      left:  508px;
+    }
+
+    &--pro::after {
+      width: 268px;
+      height: 113px;
+      top: 128px;
+      left: 468px;
+    }
+
+    &__title {
+      margin-left: 0px;
+    }
+
+    &__text {
+      margin-bottom: 62px;
+      margin-right: 211px;
+    }
+  }
 }
 
 //десктоп
 @media (min-width: @desktop-width) {
   .promo-card {
-    margin-left: 40px;
-    margin-right: 40px;
+    &--slim::before {
+      width: 100px;
+      height: 100px;
+      top: 48px;
+      left:  48px;
+    }
+
+    &--slim::after {
+      width: 71px;
+      height: 97px;
+      top: 38px;
+      left:  58px;
+    }
+
+    &--pro::before {
+      width: 100px;
+      height: 100px;
+      top: 48px;
+      left:  48px;
+    }
+
+    &--pro::after {
+      width: 134px;
+      height: 57px;
+      top: 75px;
+      left: 28px;
+    }
+
+    &__title {
+      margin-bottom: 75px;
+      margin-left: 194px;
+    }
+
+    &__text {
+      margin-bottom: 36px;
+    }
   }
 }
