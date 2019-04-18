@@ -19,7 +19,7 @@
     background: @color-green;
     border-radius: 50%;
     top: 33px;
-    left:  18px;
+    left: 18px;
   }
 
   &--slim::after {
@@ -30,7 +30,7 @@
     background-image: url(/img/icon-cat-slim.svg);
     background-repeat: no-repeat;
     top: 28px;
-    left:  28px;
+    left: 28px;
   }
 
   &--pro::before {
@@ -41,7 +41,7 @@
     background: @color-green;
     border-radius: 50%;
     top: 28px;
-    left:  18px;
+    left: 18px;
   }
 
   &--pro::after {
@@ -52,12 +52,12 @@
     background-image: url(/img/icon-cat-pro.svg);
     background-repeat: no-repeat;
     top: 38px;
-    left:  8px;
+    left: 8px;
   }
 
   &__title {
     .font-header(@_font-size: 24px, @_line-height: 37px, @_transform: uppercase);
-    margin: 0px;
+    margin: 0;
     margin-left: 72px;
   }
 
@@ -104,7 +104,7 @@
 }
 
 //планшет
-@media (min-width: @tablet-width){
+@media (min-width: @tablet-width) {
   .promo-card {
     padding-top: 81px;
     padding-bottom: 62px;
@@ -125,13 +125,13 @@
   }
 }
 
-@media (min-width: @tablet-width) and  (max-width: @desktop-width)  {
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .promo-card {
     &--slim::before {
       width: 200px;
       height: 200px;
       top: 88px;
-      left:  508px;
+      left: 508px;
     }
 
     &--slim::after {
@@ -145,7 +145,7 @@
       width: 200px;
       height: 200px;
       top: 88px;
-      left:  508px;
+      left: 508px;
     }
 
     &--pro::after {
@@ -156,7 +156,7 @@
     }
 
     &__title {
-      margin-left: 0px;
+      margin-left: 0;
     }
 
     &__text {
@@ -173,21 +173,21 @@
       width: 100px;
       height: 100px;
       top: 48px;
-      left:  48px;
+      left: 48px;
     }
 
     &--slim::after {
       width: 71px;
       height: 97px;
       top: 38px;
-      left:  58px;
+      left: 58px;
     }
 
     &--pro::before {
       width: 100px;
       height: 100px;
       top: 48px;
-      left:  48px;
+      left: 48px;
     }
 
     &--pro::after {
