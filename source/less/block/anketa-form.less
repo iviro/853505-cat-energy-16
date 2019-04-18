@@ -3,6 +3,7 @@
     .font-header(@_font-size: 24px, @_line-height: 24px);
     overflow: hidden;
   }
+
   &__title::after {
     content: "";
     display: inline-block;
@@ -15,11 +16,13 @@
     border-width: 0 0 0 22px;
     margin-right: -100%;
   }
+
   &__item{
     border: none;
     padding: 0;
     margin: 0;
   }
+
   &__item ul {
     .li-reset;
     .font-select(@_font-size: 15.5px, @_line-height: 18px, @_text-align: left);
