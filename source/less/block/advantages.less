@@ -1,7 +1,6 @@
 .advantages {
   .mob-center;
   .mob-indent-block(16px);
-
   &__title {
     .font-header;
     margin-top: -26px;
@@ -16,7 +15,7 @@
     padding-bottom: 32px;
     margin-left: 80px;
 
-    &--list {
+    &--list p {
       position: relative;
 
       &::before {
@@ -40,9 +39,8 @@
       }
     }
 
-    &--glass {
+    &--glass p {
       position: relative;
-
       &::before {
         content: "";
         position: absolute;
@@ -65,7 +63,7 @@
       }
     }
 
-    &--device {
+    &--device p {
       position: relative;
 
       &::before {
@@ -90,7 +88,7 @@
       }
     }
 
-    &--watch {
+    &--watch p {
       position: relative;
 
       &::before {
@@ -121,7 +119,6 @@
 @media (min-width: @tablet-width) {
   .advantages {
     .tab-center;
-
     &__title {
       .font-header (@_font-size: 60px);
       margin-top: 0px;
@@ -137,81 +134,133 @@
     }
 
     &__item {
+      position: relative;
       width: 324px;
       padding-top: 250px;
       padding-bottom: 75px; //105
       margin-left: 0px;
+
       & p {
-      width: 224px;
-      }
+        width: 224px;
+        }
 
-      &:nth-child(1)::after {  //так можно? только от этого кудато делись значки
-        content: "1";
-        left:  120px;
-        font-family: Oswald;
-        font-size: 281px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 281px;
-        text-align: left;
-        color: @color-light;
-        z-index: -1;
-      }
+        &:nth-child(1)::after {
+          content: "1";
+          position: absolute;
+          top: 115px;
+          left: 120px;
+          font-family: Oswald;
+          font-size: 281px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 281px;
+          text-align: left;
+          color: @color-light;
+          z-index: -1;
+        }
 
-      &--list {
+        &:nth-child(2)::after {
+          content: "2";
+          position: absolute;
+          top: 115px;
+          left: 120px;
+          font-family: Oswald;
+          font-size: 281px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 281px;
+          text-align: left;
+          color: @color-light;
+          z-index: -1;
+        }
+
+        &:nth-child(3)::after {
+          content: "3";
+          position: absolute;
+          top: 115px;
+          left: 120px;
+          font-family: Oswald;
+          font-size: 281px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 281px;
+          text-align: left;
+          color: @color-light;
+          z-index: -1;
+        }
+
+        &:nth-child(4)::after {
+          content: "4";
+          position: absolute;
+          top: 115px;
+          left: 120px;
+          font-family: Oswald;
+          font-size: 281px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 281px;
+          text-align: left;
+          color: @color-light;
+          z-index: -1;
+        }
+
+      &--list p {
         &::before {
           width: 80px;
           height: 80px;
-          top: 120px;
+          top: -120px;
           left: 0px;
           z-index: -10;
         }
 
         &::after {
-          top: 135px;
+          top: -105px;
           left: 15px;
         }
       }
 
-      &--glass {
+      &--glass p {
         &::before {
           width: 80px;
           height: 80px;
-          top: 120px;
+          top: -120px;
           left: 0px;
         }
 
         &::after {
-          top: 135px;
+          top: -105px;
           left: 15px;
         }
       }
 
-      &--device {
+      &--device p {
         &::before {
           width: 80px;
           height: 80px;
-          top: 120px;
+          top: -120px;
           left: 0px;
         }
 
         &::after {
-          top: 135px;
+          top: -105px;
           left: 15px;
         }
       }
 
-      &--watch {
+      &--watch p {
         &::before {
           width: 80px;
           height: 80px;
-          top: 120px;
+          top: -120px;
           left: 0px;
         }
 
         &::after {
-          top: 135px;
+          top: -105px;
           left: 15px;
         }
       }
