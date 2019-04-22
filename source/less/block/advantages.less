@@ -8,7 +8,6 @@
   }
 
   &__list {
-    position: relative;
     .li-reset;
     .font-text;
   }
@@ -37,6 +36,7 @@
         top: 5px;
         left: -75px;
         background-image: url("/img/advantage-leaf@1x.png");
+        background-repeat: no-repeat;
       }
     }
 
@@ -61,6 +61,7 @@
         top: 5px;
         left: -75px;
         background-image: url("/img/advantage-powder@1x.png");
+        background-repeat: no-repeat;
       }
     }
 
@@ -85,6 +86,7 @@
         top: 5px;
         left: -75px;
         background-image: url("/img/advantage-dining@1x.png");
+        background-repeat: no-repeat;
       }
     }
 
@@ -109,6 +111,161 @@
         top: 5px;
         left: -75px;
         background-image: url("/img/advantage-clock@1x.png");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+//планшет
+@media (min-width: @tablet-width) {
+  .advantages {
+    .tab-center;
+
+    &__title {
+      .font-header (@_font-size: 60px);
+      margin-top: 0px;
+      margin-bottom: -70px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .font-text(@_font-size: 16px, @_line-height: 24px);
+      margin-left: 0px;
+    }
+
+    &__item {
+      width: 324px;
+      padding-top: 250px;
+      padding-bottom: 75px; //105
+      margin-left: 0px;
+      & p {
+      width: 224px;
+      }
+
+      &:nth-child(1)::after {  //так можно? только от этого кудато делись значки
+        content: "1";
+        left:  120px;
+        font-family: Oswald;
+        font-size: 281px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 281px;
+        text-align: left;
+        color: @color-light;
+        z-index: -1;
+      }
+
+      &--list {
+        &::before {
+          width: 80px;
+          height: 80px;
+          top: 120px;
+          left: 0px;
+          z-index: -10;
+        }
+
+        &::after {
+          top: 135px;
+          left: 15px;
+        }
+      }
+
+      &--glass {
+        &::before {
+          width: 80px;
+          height: 80px;
+          top: 120px;
+          left: 0px;
+        }
+
+        &::after {
+          top: 135px;
+          left: 15px;
+        }
+      }
+
+      &--device {
+        &::before {
+          width: 80px;
+          height: 80px;
+          top: 120px;
+          left: 0px;
+        }
+
+        &::after {
+          top: 135px;
+          left: 15px;
+        }
+      }
+
+      &--watch {
+        &::before {
+          width: 80px;
+          height: 80px;
+          top: 120px;
+          left: 0px;
+        }
+
+        &::after {
+          top: 135px;
+          left: 15px;
+        }
+      }
+    }
+  }
+}
+
+//десктоп
+@media (min-width: @desktop-width) {
+  .advantages {
+    .desk-center;
+
+    &__title {
+      .font-header (@_font-size: 60px);
+      margin-top: -26px;
+    }
+
+    &__list {
+      &::after {
+      }
+    }
+
+    &__item {
+
+      &--list {
+        &::before {
+        }
+
+        &::after {
+        }
+      }
+
+      &--glass {
+        &::before {
+        }
+
+        &::after {
+        }
+      }
+
+      &--device {
+        &::before {
+        }
+
+        &::after {
+        }
+      }
+
+      &--watch {
+        &::before {
+        }
+
+        &::after {
+        }
       }
     }
   }
