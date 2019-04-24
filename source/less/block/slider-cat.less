@@ -16,8 +16,6 @@
     position: absolute;
     width: inherit;
     height: inherit;
-    opacity: 0;
-	  z-index: 0;
   }
 
   &__before-cat {
@@ -25,10 +23,11 @@
   }
 
   &__after-cat {
+    display: none;
     background-image: url("/img/after-mobile@1x.png");
   }
 
-  &__wrap-ctrl label {
+  &__wrap-ctrl {
     position: absolute;
     width: 84px;
     height: 14px;
@@ -47,30 +46,6 @@
       left: 6px;
       border-radius: 3px;
       background-color: @color-green;
-    }
-  }
-
-  label.slider-cat__label {
-    cursor: pointer;
-    display: inline-block;
-    &:hover ,
-    #cat__before:checked ~ .slider-cat__wrap-ctrl label:nth-of-type(1) ,
-    #cat__before:checked ~ .slider-cat__wrap-ctrl label:nth-of-type(2) {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 35px;
-      height: 6px;
-      top: 4px;
-      left: 6px;
-      border-radius: 3px;
-      background-color: @color-green;
-    }
-    &:hover ,
-    #cat__before:checked ~ .slider-cat__wrap-ctrl > .cat__before,
-    #cat__after:checked ~ .slider-cat__wrap-slide > .cat__after {
-      opacity: 1;
-      z-index: 1;
     }
   }
 
