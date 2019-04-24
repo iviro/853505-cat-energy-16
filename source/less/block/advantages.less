@@ -271,47 +271,17 @@
 //десктоп
 @media (min-width: @desktop-width) {
   .advantages {
+    .desk-center(@_width:  1220px);
+    padding-top: 79px;
     &__title {
     }
 
     &__list {
-      &::after {
-      }
+      flex-wrap: nowrap;
     }
 
     &__item {
-
-      &--list {
-        &::before {
-        }
-
-        &::after {
-        }
-      }
-
-      &--glass {
-        &::before {
-        }
-
-        &::after {
-        }
-      }
-
-      &--device {
-        &::before {
-        }
-
-        &::after {
-        }
-      }
-
-      &--watch {
-        &::before {
-        }
-
-        &::after {
-        }
-      }
+      flex-shrink: -1;
     }
   }
 }

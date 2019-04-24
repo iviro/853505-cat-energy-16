@@ -61,4 +61,36 @@
 
 //десктоп
 @media (min-width: @desktop-width) {
+  .slider {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    .desk-center;
+    border-top: solid 210px @color-alt;
+    background-color: @color-light;
+    &__title {
+      position: absolute;
+      top: -130px;
+      padding-left: 110px;
+      .font-header(@_font-size: 60px);
+    }
+
+    &__wrap-1 {
+      width: 590px;
+    }
+
+    &__text {
+      margin-bottom: 71px;
+      padding-left: 110px;
+    }
+
+    &__cost {
+      position: static;
+      width: inherit;
+      padding-left: 110px;
+      padding-bottom: 75px;
+      .font-select(@_text-align: left);
+    }
+  }
 }

@@ -75,8 +75,8 @@
     border-top: solid 210px @color-alt;
     background-color: @color-light;
     &__wrap-slide  {
-      width: 636px;
-      height: 571px;
+      width: 690px;
+      height: 517px;
     }
     &__before-cat {
       position: absolute;
@@ -141,4 +141,23 @@
 
 //десктоп
 @media (min-width: @desktop-width) {
+  .slider-cat {
+    position: absolute;
+    top: -20px;
+    left: 600px;
+    flex-grow: 2;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: none;
+    &__before-cat {
+      background-image: url("/img/before-desktop@1x.png");
+      }
+
+    &__after-cat {
+      background-image: url("/img/after-desktop@1x.png");
+      }
+
+    &__wrap-ctrl {
+      bottom: 242px;
+    }
+  }
 }
