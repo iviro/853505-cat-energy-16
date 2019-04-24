@@ -20,11 +20,13 @@
 
   &__before-cat {
     background-image: url("/img/before-mobile@1x.png");
+    background-repeat: no-repeat;
   }
 
   &__after-cat {
     display: none;
     background-image: url("/img/after-mobile@1x.png");
+    background-repeat: no-repeat;
   }
 
   &__wrap-ctrl {
@@ -69,34 +71,70 @@
 @media (min-width: @tablet-width) {
   .slider-cat {
     box-sizing: border-box;
-   height: 675px;
+    height: 675px;
     border-top: solid 210px @color-alt;
     background-color: @color-light;
-
-    &__before-cat {
-      width: 311px;
-      height: 232px;
+    &__wrap-slide  {
+      width: 636px;
+      height: 571px;
     }
-
-    &__before {
-      bottom: -35px;
-      left: 44px;
-      .font-select(@_text-align: left);
+    &__before-cat {
+      position: absolute;
+      bottom: 174px;
+      left: 55px;
+    background-image: url("/img/before-tablet@1x.png");
     }
 
     &__after-cat {
+      position: absolute;
+      bottom: 174px;
+      right: 55px;
+    background-image: url("/img/after-tablet@1x.png");
+    }
+
+    &__wrap-ctrl {
+      width: 428px;
+      height: 6px;
+      bottom: 81px;
+      left: 169px;
+      border-radius: 2.5px;
+      background-color: #dcdcdc;
+      &::before {
+        width: 34px;
+        height: 34px;
+        top: -17px;
+        left: 207px;
+        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+        border: solid 1px #cdcdcd;
+        border-radius:  17px;
+        background-color: @color-alt;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        top: -2px;
+        left: 221px;
+        background-color: @color-green;
+        border-radius:  4px;
+      }
+    }
+
+    &__before {
+      bottom: -12px;
+      left: -57px;
+      padding-bottom: 5px;
+      border-bottom: solid 1px #eaeaea;
+      .font-select(@_text-align: left);
     }
 
     &__after {
-      bottom: -35px;
-      right: 44px;
+      bottom: -12px;
+      right: -59px;
+      padding-bottom: 5px;
+      border-bottom: solid 1px #eaeaea;
       .font-select(@_text-align: right);
-    }
-
-    &__line {
-    }
-
-    &__line--move{
     }
   }
 }
