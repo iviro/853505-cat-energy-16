@@ -1,12 +1,65 @@
 .slider-note--wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .slider-note {
+  display: block;
+  box-sizing: border-box;
+  width: 124px;
+  height: 56px;
+  padding-top: 13px;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  border: solid 1px #cdcdcd;
   &__term {
     .font-select(@_font-size: 24px, @_line-height: 24px, @_text-align: center);
   }
 
   &__definition {
+    display: block;
+    box-sizing: border-box;
+    width: 87px;
+    height: 21px;
+    margin: 0 auto;
+    margin-top: 11px ;
+    padding: 0 15px;
+    background-color: @color-light;
     .font-text(@_font-size: 11.5px, @_line-height: 11.5px, @_text-align: center);
   }
+}
+
+//планшет
+@media (min-width: @tablet-width) {
+  .slider-note--wrap {
+    width: 384px;
+    margin-bottom: 38px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .slider-note {
+    width: 162px;
+    height: 75px;
+    padding-top: 23px;
+    &__term {
+      .font-select(@_font-size: 24px, @_line-height: 24px, @_text-align: center);
+    }
+
+    &__definition {
+      width: 140px;
+      height: 21px;
+      margin-top: 21px ;
+      padding: 0 15px;
+      background-color: @color-alt;
+      .font-text(@_font-size: 11.5px, @_line-height: 11.5px, @_text-align: center);
+    }
+  }
+}
+
+//десктоп
+@media (min-width: @desktop-width) {
 }

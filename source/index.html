@@ -76,11 +76,19 @@
           </dl> <!-- slider-note // day-->
         </div> <!-- slider-note--wrap-->
         <p class="slider__cost">Затраты на питание: 15 000 руб.</p>
-        <div class="slider-cat slider-cat--line slider-cat--line-move">
-          <img class="slider-cat__before-cat" src="/img/before-mobile@1x.png" width="250" height="226" alt="Толстый кот">
-          <button class="slider-cat__before">Было</button>
-          <img class="slider-cat__after-cat" src="/img/after-mobile@1x.png" width="250" height="226" alt="Стройный кот">
-          <button class="slider-cat__after">Стало</button>
+        <div class="slider-cat">
+          <div class="slider-cat__wrap-slide">
+            <div class="slider-cat__cat slider-cat__before-cat"></div>
+            <div class="slider-cat__cat slider-cat__after-cat"></div>
+          </div>
+          <div class="slider-cat__wrap-input">
+            <input type="radio" name="cat__before" id="cat__before"></input>
+            <input type="radio" name="cat__after" id="cat__after"></input>
+          </div>
+          <div class="slider-cat__wrap-ctrl">
+            <label class="slider-cat__label slider-cat__before" for="cat__before" checked>Было</label>
+            <label class="slider-cat__label slider-cat__after" for="cat__after">Стало</label>
+          </div>
         </div> <!-- slider-cat -->
       </section> <!-- slider -->
     </main> <!-- main -->

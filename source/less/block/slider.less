@@ -2,19 +2,63 @@
   .mob-center;
   background-color: @color-light;
   padding-top: 33px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 88px;
   &__title {
-    .font-header;
     margin-top: 0px;
+    margin-bottom: 33px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .font-header;
   }
 
   &__text {
+    margin-bottom: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
     .font-text;
   }
 
   &__cost {
+    margin-bottom: 44px;
     .font-select;
   }
+}
+
+//планшет
+@media (min-width: @tablet-width) {
+  .slider {
+    position: relative;
+    padding-top: 43px;
+    padding-bottom: 88px;
+    .tab-center;
+    background-color: @color-alt;
+    border-top: solid 2px @color-light;
+    &__title {
+      margin-bottom: 65px;
+      padding-left: 30px;
+      padding-right: 30px;
+      .font-header(@_font-size: 60px);
+    }
+
+    &__text {
+      margin-bottom: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+      .font-text(@_font-size: 16px, @_line-height: 24px);
+    }
+
+    &__cost {
+      display: inline-block;
+      width: 192px;
+      position: absolute;
+      margin-bottom: 0px;
+      top: 295px;
+      right: 1px;
+      .font-select(@_font-size: 20px, @_text-align: right);
+    }
+  }
+}
+
+//десктоп
+@media (min-width: @desktop-width) {
 }
